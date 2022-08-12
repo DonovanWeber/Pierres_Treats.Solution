@@ -3,7 +3,7 @@
 <h2>Edit</h2>
 <h4>Edit this treat: @Html.DisplayFor(model => model.Name)</h4>
 
-@using(Html.BeginFor())
+@using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.TreatId)
   @Html.LabelFor(model => model.Name)

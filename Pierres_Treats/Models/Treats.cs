@@ -1,6 +1,9 @@
+using System.Collections.Generic;
+using System;
+
 namespace PierresTreats.Models
 {
-    public class Treats
+    public class Treat
     {
       public Treat()
       {
@@ -10,6 +13,8 @@ namespace PierresTreats.Models
 
     public int TreatId { get; set; }
     public string Name { get; set; }
+    public string Description { get; set; }
+    public virtual ApplicationUser User { get; set; }
     public virtual ICollection<FlavorTreat> JoinEntities { get; set; }
   }
 }

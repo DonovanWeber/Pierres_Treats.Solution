@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace PierresTreats.Controllers
 {
-  [Authorize]
+  
   public class TreatsController : Controller
   {
     private readonly PierresTreatsContext _db;
@@ -115,7 +115,7 @@ namespace PierresTreats.Controllers
     }
 
     [HttpPost]
-    public ActionResult DeleteCategory(int joinId)
+    public ActionResult DeleteFlavor(int joinId)
     {
       var joinEntry = _db.FlavorTreat.FirstOrDefault(entry => entry.FlavorTreatId == joinId);
       _db.FlavorTreat.Remove(joinEntry);

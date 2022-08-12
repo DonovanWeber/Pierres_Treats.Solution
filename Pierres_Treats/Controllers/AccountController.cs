@@ -35,6 +35,11 @@ namespace PierresTreats.Controllers
       return View();
     }
 
+    public ActionResult Login()
+    {
+      return View();
+    }
+
     [HttpPost]
     public async Task<ActionResult> Register (RegisterViewModel model)
     {

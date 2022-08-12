@@ -1,8 +1,8 @@
-@model PierresTreat.Model.Treat 
+@model PierresTreats.Models.Treat 
 
 <h4>Add treat</h4>
 
-@using(Html.BeginFor())
+@using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)

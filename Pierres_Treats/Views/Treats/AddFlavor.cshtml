@@ -4,7 +4,7 @@
 
 <h4>Add a flavor to this treat: @Html.DisplayFor(model => model.Name)</h4>
 
-@using(Html.BeginFor())
+@using(Html.BeginForm())
 {
   @Html.HiddenFor(model => model.TreatId)
 
@@ -14,4 +14,4 @@
   <input type="submit" value="Save" />
 }
 
-<p>@Html.ActionLiNk("Back", "Index")</p>
+<p>@Html.ActionLink("Back", "Index")</p>
