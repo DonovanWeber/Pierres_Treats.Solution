@@ -12,6 +12,7 @@ using PierresTreats.ViewModels;
 
 namespace PierresTreats.Controllers
 {
+  
   public class AccountController : Controller 
   {
     private readonly PierresTreatsContext _db;
