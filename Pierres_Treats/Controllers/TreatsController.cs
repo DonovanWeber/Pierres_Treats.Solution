@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace PierresTreats.Controllers
 {
-  
+  [Authorize]
   public class TreatsController : Controller
   {
     private readonly PierresTreatsContext _db;
