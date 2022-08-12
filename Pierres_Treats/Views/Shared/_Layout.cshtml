@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pierre's Market!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="~/css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>@Html.ActionLink("Pierre's Treats", "Index", "Home")</h1>
+    </div>
+    <div class="MenuContainer">
+      <div class="MenuContainerObject">
+        <p>@Html.ActionLink("MOVIES", "Index","Movies")
+      </div>
+      <div class="MenuContainerObject">
+        <p>@Html.ActionLink("GENRES", "Index", "Genres")
+      </div>
+      <div class="MenuContainerObject">
+        <p>@Html.ActionLink("PATRONS", "Index", "Patrons")
+      </div>
+      <div class="MenuContainerObject">
+        <p>@Html.ActionLink("ACCOUNT", "Index", "Account")
+      </div>
+    </div>
+  </div>
+  <div class="cardcontainer">
+    <div class="card">
+      <div class="contentcontainer">
+        @RenderBody()
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2022 Pierre's Market. All Rights Reserved.</p>
+  </div>
+</body>
+
+</html>
